@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiven Workflow Automation Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Relative paths so it works via file:// and when serving from web/ -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="#">Aiven ERP</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="nav" id="nav-menu">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li class="has-submenu">
+              <a href="#features">Features</a>
+              <ul class="submenu">
+                <li><a href="features/leave-management.html">Leave Management</a></li>
+                <li><a href="features/inventory-management.html">Inventory Management</a></li>
+                <li><a href="features/sales-order-tracking.html">Sales Order Tracking</a></li>
+                <li><a href="features/time-tracking.html">Time Tracking</a></li>
+                <li><a href="features/task-management.html">Task Management</a></li>
+                <li><a href="features/document-sharing.html">Document Sharing</a></li>
+                <li><a href="features/accounting-integration.html">Accounting Integration</a></li>
+                <li><a href="features/crm.html">CRM</a></li>
+              </ul>
+            </li>
+            <li><a href="#ai">AI Suite</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn secondary" href="mailto:sales@aivenerp.com?subject=Aiven%20ERP%20Sales%20Inquiry&body=Hi%20Aiven%20ERP%20team,%0D%0A%0D%0AI'm%20interested%20in%20pricing%20and%20a%20demo.%0D%0APhone:%20403-464-4854%0D%0A">Contact Sales</a>
+          <a class="btn primary" href="mailto:sales@aivenerp.com?subject=Request%20a%20Demo%20-%20Aiven%20ERP&body=Hi%20Aiven%20ERP%20team,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20demo.%0D%0APhone:%20403-464-4854%0D%0A">Request a Demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <span class="eyebrow">AI Driven ERP</span>
+            <h1>Unify operations with intelligent, modular automation</h1>
+            <p>
+              Aiven ERP brings every department together with orchestrated workflows,
+              actionable insights, and AI-powered assistance that adapts to your business.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="mailto:sales@aivenerp.com?subject=Request%20a%20Demo%20-%20Aiven%20ERP&body=Hi%20Aiven%20ERP%20team,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20demo.%0D%0APhone:%20403-464-4854%0D%0A">Request a Demo</a>
+              <a class="btn ghost" href="mailto:sales@aivenerp.com?subject=Aiven%20ERP%20Sales%20Inquiry&body=Hi%20Aiven%20ERP%20team,%0D%0A%0D%0AI'm%20interested%20in%20pricing%20and%20a%20demo.%0D%0APhone:%20403-464-4854%0D%0A">Contact Sales</a>
+            </div>
+            <p class="pricing-note">Pricing available on request — please contact sales.</p>
+            <dl class="hero-stats">
+              <div>
+                <dt>99.9% uptime</dt>
+                <dd>Trusted cloud-native infrastructure.</dd>
+              </div>
+              <div>
+                <dt>30% faster cycles</dt>
+                <dd>Accelerate approvals and fulfillment.</dd>
+              </div>
+              <div>
+                <dt>Global-ready</dt>
+                <dd>Scale securely across teams and regions.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-media">
+            <div class="hero-media-card">
+              <img
+                src="images/Dashboard.png"
+                alt="Product dashboard screenshot placeholder"
+              />
+            </div>
+            <svg class="accent-grid" viewBox="0 0 180 120" aria-hidden="true">
+              <defs>
+                <linearGradient id="accentGradient" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#c8bcff" />
+                  <stop offset="100%" stop-color="#6a4ded" />
+                </linearGradient>
+              </defs>
+              <rect x="2" y="2" width="56" height="36" rx="8" fill="url(#accentGradient)" opacity="0.45" />
+              <rect x="64" y="44" width="56" height="36" rx="8" fill="url(#accentGradient)" opacity="0.6" />
+              <rect x="126" y="86" width="52" height="32" rx="8" fill="url(#accentGradient)" opacity="0.8" />
+              <circle cx="150" cy="24" r="16" fill="#f0ebff" opacity="0.9" />
+              <circle cx="30" cy="90" r="14" fill="#ebe4ff" opacity="0.9" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview" id="overview">
+        <div class="container overview-grid">
+          <div class="overview-intro">
+            <h2>Workflow automation built for resilient teams</h2>
+            <p>
+              From onboarding to invoicing, orchestrate complex, cross-functional processes with
+              no-code builders, reusable templates, and live collaboration. Layer in approvals,
+              notifications, and AI copilots that align every stakeholder.
+            </p>
+          </div>
+          <div class="overview-cards">
+            <article class="card">
+              <h3>AI Chat Builder</h3>
+              <p>
+                Describe your process in plain language and let the AI generate workflows, steps,
+                conditions, and approvals automatically. Refine by chatting to add integrations and
+                business rules.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Unified Data Hub</h3>
+              <p>Connect ERP, CRM, HRIS, and finance systems with prebuilt connectors and secure APIs.</p>
+            </article>
+            <article class="card">
+              <h3>Insightful Reporting</h3>
+              <p>Monitor KPIs in real time with custom dashboards and automated compliance trails.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2>Modular feature suites that scale with you</h2>
+          <p class="section-lead">
+            Activate only what you need today and expand effortlessly. Each module integrates
+            seamlessly with your existing workflows and data models.
+          </p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/leave-management.html">Leave Management</a></h3>
+              <p>Request, approve, and track time off with real‑time balances and conflict detection.</p>
+              <a class="btn ghost small" href="features/leave-management.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/inventory-management.html">Inventory Management</a></h3>
+              <p>Real‑time stock, AI‑assisted PO entry, and seamless allocation to orders.</p>
+              <a class="btn ghost small" href="features/inventory-management.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/sales-order-tracking.html">Sales Order Tracking</a></h3>
+              <p>Quotes to orders with live cost tracking and AI estimates for accuracy.</p>
+              <a class="btn ghost small" href="features/sales-order-tracking.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/time-tracking.html">Time Tracking</a></h3>
+              <p>Clock in/out by job, analyze productivity, and export for payroll and billing.</p>
+              <a class="btn ghost small" href="features/time-tracking.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/task-management.html">Task Management</a></h3>
+              <p>Create, assign, and automate tasks with AI that learns and suggests next steps.</p>
+              <a class="btn ghost small" href="features/task-management.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/document-sharing.html">Document Sharing</a></h3>
+              <p>Centralize policies and guides, track reads, and ensure compliance across teams.</p>
+              <a class="btn ghost small" href="features/document-sharing.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/accounting-integration.html">Accounting Integration</a></h3>
+              <p>Sync with QuickBooks, Sage, or Xero to automate invoicing and reconciliation.</p>
+              <a class="btn ghost small" href="features/accounting-integration.html">Learn more</a>
+            </article>
+            <article class="feature-card">
+              <h3><a class="card-link" href="features/crm.html">Customer Relationship Management (CRM)</a></h3>
+              <p>Track leads and deals, set follow‑ups, and view complete client histories.</p>
+              <a class="btn ghost small" href="features/crm.html">Learn more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-suite" id="ai">
+        <div class="container ai-grid">
+          <div class="ai-copy">
+            <h2>AI copilots for every part of the journey</h2>
+            <p>
+              Chat with your system to automate work, find data instantly, and streamline
+              operations. Our AI understands your processes and improves continuously.
+            </p>
+            <ul class="ai-list">
+              <li>
+                <strong>AI Copilot:</strong> Chat to perform tasks, get answers, and automate
+                complex workflows — from creating purchase orders to assigning tasks or generating
+                reports. Ask natural questions like “Who’s on leave today?” or “Show me low‑stock
+                items” and get immediate responses. The AI adapts to your company’s data, habits,
+                and workflows over time.
+              </li>
+              <li>
+                <strong>Ordering AI Agent:</strong> Order parts with your voice. The agent checks
+                availability and pricing with vendors, compares suppliers, and—once approved—places
+                the purchase order on your behalf. Save hours with a fully automated, voice‑enabled
+                ordering process.
+              </li>
+            </ul>
+            <a class="btn secondary" href="#contact">See the AI Suite</a>
+          </div>
+          <div class="ai-media">
+            <div class="ai-card">
+              <img src="images/AI Copilot.png" alt="AI Copilot screenshot placeholder" />
+            </div>
+            <div class="ai-annotation">
+              <span class="badge">Adaptive Intelligence</span>
+              <p>Continuously learns from historical data to provide dynamic automation rules.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="container cta-content">
+          <h2>Experience a connected automation platform</h2>
+          <p>
+            Partner with our experts to map processes, tailor integrations, and launch in weeks—not months.
+          </p>
+          <div class="cta-actions">
+            <a class="btn primary" href="mailto:sales@example.com">Request a Demo</a>
+            <a class="btn ghost" href="mailto:hello@example.com">Contact Sales</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#top">Aiven ERP</a>
+          <p>Purpose-built to orchestrate your most critical workflows with intelligence and care.</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Modules</a></li>
+            <li><a href="#ai">AI Suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:sales@example.com">Sales</a></li>
+            <li><a href="mailto:support@example.com">Support</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-meta">© <span id="year"></span> Aiven ERP. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
