@@ -169,12 +169,63 @@ img {
 .btn.small { padding: 0.45rem 0.9rem; font-size: 0.9rem; }
 .card-link { color: inherit; }
 
+/* Visual placeholders replace binary screenshots so assets stay text-based */
+.visual-placeholder {
+  --visual-aspect: 16 / 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: var(--radius-medium);
+  border: 1px solid rgba(106, 77, 237, 0.12);
+  box-shadow: 0 16px 32px rgba(26, 17, 52, 0.08);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.15), transparent 50%),
+    linear-gradient(135deg, #dcd5ff, #6a4ded);
+  color: rgba(255, 255, 255, 0.94);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  aspect-ratio: var(--visual-aspect);
+}
+
+.visual-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: calc(var(--radius-medium) * 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  opacity: 0.65;
+}
+
+.visual-placeholder::after {
+  content: attr(data-label);
+  position: relative;
+  z-index: 1;
+  font-size: clamp(0.75rem, 1vw + 0.6rem, 1.05rem);
+}
+
+.hero-placeholder {
+  --visual-aspect: 16 / 10;
+}
+
+.hero-placeholder::after {
+  font-size: clamp(0.9rem, 1.4vw + 0.7rem, 1.35rem);
+  letter-spacing: 0.16em;
+}
+
+.ai-placeholder {
+  --visual-aspect: 5 / 4;
+}
+
 /* Feature illustrations */
 .feature-illustration {
   margin: 1rem 0 1.25rem;
-  border-radius: var(--radius-medium);
-  border: 1px solid rgba(106,77,237,0.12);
-  box-shadow: 0 16px 32px rgba(26,17,52,0.08);
+  --visual-aspect: 4 / 3;
 }
 
 /* Feature detail layout (image left, text right) */
