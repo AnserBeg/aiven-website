@@ -28,10 +28,38 @@ navLinks.forEach((link) => {
 const featureMenu = document.querySelector('.nav .has-submenu > a');
 const featureItem = document.querySelector('.nav .has-submenu');
 if (featureMenu && featureItem) {
+  let closeMenuTimeout;
+
+  const openSubmenu = () => {
+    clearTimeout(closeMenuTimeout);
+    featureItem.classList.add('open');
+  };
+
+  const scheduleClose = () => {
+    clearTimeout(closeMenuTimeout);
+    closeMenuTimeout = setTimeout(() => {
+      featureItem.classList.remove('open');
+    }, 150);
+  };
+
   featureMenu.addEventListener('click', (e) => {
     e.preventDefault();
-    featureItem.classList.toggle('open');
+    if (featureItem.classList.contains('open')) {
+      featureItem.classList.remove('open');
+    } else {
+      openSubmenu();
+    }
   });
+
+  featureItem.addEventListener('mouseenter', openSubmenu);
+  featureItem.addEventListener('mouseleave', scheduleClose);
+  featureItem.addEventListener('focusin', openSubmenu);
+  featureItem.addEventListener('focusout', (event) => {
+    if (!featureItem.contains(event.relatedTarget)) {
+      scheduleClose();
+    }
+  });
+
   // Close when clicking outside
   document.addEventListener('click', (e) => {
     if (!featureItem.contains(e.target)) {

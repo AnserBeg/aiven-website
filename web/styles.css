@@ -120,6 +120,18 @@ img {
 .nav .has-submenu:focus-within > .submenu,
 .nav .has-submenu.open > .submenu { display: block; }
 
+@media (min-width: 961px) {
+  .nav .has-submenu::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 280px;
+    height: 1.25rem;
+  }
+}
+
 .nav-cta {
   display: flex;
   align-items: center;
