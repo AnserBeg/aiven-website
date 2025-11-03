@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Demo – Aiven ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">Aiven ERP</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="nav" id="nav-menu">
+          <ul>
+            <li><a href="index.html#overview">Overview</a></li>
+            <li class="has-submenu">
+              <a href="index.html#features">Features</a>
+              <ul class="submenu">
+                <li><a href="features/leave-management.html">Leave Management</a></li>
+                <li><a href="features/inventory-management.html">Inventory Management</a></li>
+                <li><a href="features/sales-order-tracking.html">Sales Order Tracking</a></li>
+                <li><a href="features/time-tracking.html">Time Tracking</a></li>
+                <li><a href="features/task-management.html">Task Management</a></li>
+                <li><a href="features/document-sharing.html">Document Sharing</a></li>
+                <li><a href="features/accounting-integration.html">Accounting Integration</a></li>
+                <li><a href="features/crm.html">CRM</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#ai">AI Suite</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn secondary" href="contact-sales.html">Contact Sales</a>
+          <a class="btn primary" href="request-demo.html">Request a Demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-page">
+        <div class="container form-grid">
+          <div class="form-intro">
+            <span class="eyebrow">See Aiven ERP in action</span>
+            <h1>Schedule your personalized demo</h1>
+            <p>
+              Tell us a little about your team and when you are free. Our product specialists will
+              confirm a time that works and send a calendar invite from
+              <a href="mailto:sales@aivenerp.com">sales@aivenerp.com</a>.
+            </p>
+            <p>
+              Prefer to email us directly? Drop a note to
+              <a href="mailto:sales@aivenerp.com">sales@aivenerp.com</a> and we will reply within one
+              business day.
+            </p>
+          </div>
+          <form
+            class="form-card"
+            action="mailto:sales@aivenerp.com?subject=Aiven%20ERP%20Demo%20Request"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="field">
+              <label for="demo-name">Full name</label>
+              <input id="demo-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="demo-company">Company</label>
+              <input id="demo-company" name="company" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="demo-email">Work email</label>
+              <input
+                id="demo-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="demo-phone">Phone (optional)</label>
+              <input
+                id="demo-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+1 (555) 123-4567"
+              />
+            </div>
+            <div class="field">
+              <label for="demo-date">Preferred meeting date</label>
+              <input id="demo-date" name="preferred_date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="demo-times">Available time windows</label>
+              <select id="demo-times" name="available_times[]" multiple required size="5">
+                <option value="Monday Morning">Monday Morning (9:00–11:00)</option>
+                <option value="Monday Afternoon">Monday Afternoon (1:00–4:00)</option>
+                <option value="Tuesday Morning">Tuesday Morning (9:00–11:00)</option>
+                <option value="Tuesday Afternoon">Tuesday Afternoon (1:00–4:00)</option>
+                <option value="Wednesday Morning">Wednesday Morning (9:00–11:00)</option>
+                <option value="Wednesday Afternoon">Wednesday Afternoon (1:00–4:00)</option>
+                <option value="Thursday Morning">Thursday Morning (9:00–11:00)</option>
+                <option value="Thursday Afternoon">Thursday Afternoon (1:00–4:00)</option>
+                <option value="Friday Morning">Friday Morning (9:00–11:00)</option>
+                <option value="Friday Afternoon">Friday Afternoon (1:00–3:00)</option>
+              </select>
+              <p class="field-help">Hold Ctrl (Windows) or Command (Mac) to select multiple windows.</p>
+            </div>
+            <div class="field">
+              <label for="demo-goals">What would you like to cover?</label>
+              <textarea
+                id="demo-goals"
+                name="demo_goals"
+                rows="5"
+                placeholder="Share the workflows, integrations, or KPIs you want to explore."
+                required
+              ></textarea>
+            </div>
+            <p class="form-disclaimer">
+              Submitting opens your email client to forward the details to
+              <strong>sales@aivenerp.com</strong> for scheduling.
+            </p>
+            <button class="btn primary" type="submit">Send demo request</button>
+            <p class="form-alt">
+              Looking for a different conversation?
+              <a href="contact-sales.html">Use the sales contact form</a> or email
+              <a href="mailto:sales@aivenerp.com">sales@aivenerp.com</a> anytime.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html#top">Aiven ERP</a>
+          <p>
+            Purpose-built to orchestrate your most critical workflows with intelligence and care. Talk
+            with us at <a href="mailto:sales@aivenerp.com">sales@aivenerp.com</a>.
+          </p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#features">Modules</a></li>
+            <li><a href="index.html#ai">AI Suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:sales@aivenerp.com">Sales</a></li>
+            <li><a href="mailto:support@aivenerp.com">Support</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-meta">© <span id="year"></span> Aiven ERP. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
