@@ -482,6 +482,29 @@ dd {
   max-width: 320px;
 }
 
+.ai-workflow {
+  padding: 1rem 0 3rem;
+}
+
+.ai-workflow-figure {
+  margin: 0;
+}
+
+.ai-workflow-img {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(106, 77, 237, 0.12);
+}
+
+.ai-workflow-caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--color-text-muted);
+}
+
 .badge {
   display: inline-block;
   background: var(--color-primary);
